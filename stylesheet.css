@@ -1,0 +1,66 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #555;
+}
+
+#content {
+  position: absolute;
+  border: green solid;
+  margin: 0;
+  width: 100%
+}
+#sidebar {
+  border: red solid thick;
+  height: 100%;
+  width: 175px;
+  position: absolute;
+}
+
+#sidebar-text {
+  border: blue solid thin;
+  text-align: right;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+}
+
+#sidebar-text ul {
+  list-style-type: none;
+}
+
+#main {
+  border: solid pink;
+}
+.section {
+  margin: 5%;
+  margin-left: 200px;
+  border: black dotted;
+}
+
+#welcome {
+  background-color: #f1faf3;
+  border: #f1faf3 solid;
+  height: 300px;
+}
+
+
+#about {
+  background-color: #a9e2e2;
+  border: #a9e2e2 solid;
+  height: 300px;
+}
+
+#projects {
+  background-color: #9cded0;
+  border: #9cded0 solid;
+  height: 300px;
+}
+
+#resume {
+  background-color: #9bcede;
+  border: #9bcede solid;
+  height: 300px;
+}
