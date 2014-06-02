@@ -6,21 +6,24 @@ body, html {
   color: #555;
 }
 
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+
 #content {
   position: absolute;
-  border: green solid;
   margin: 0;
   width: 100%
 }
 #sidebar {
-  border: red solid thick;
   height: 100%;
   width: 175px;
   position: absolute;
 }
 
 #sidebar-text {
-  border: blue solid thin;
   text-align: right;
   position: fixed;
   left: 50px;
@@ -31,19 +34,30 @@ body, html {
   list-style-type: none;
 }
 
-#main {
-  border: solid pink;
+#profile-img {
+  display: inline;
+  float: right;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
 }
+
+#icons {
+  margin: 0 auto;
+  width: 50%;
+  padding: 5%;
+}
+
 .section {
   margin: 5%;
   margin-left: 200px;
-  border: black dotted;
+  display: block;
+  position: relative;
 }
 
 #welcome {
   background-color: #f1faf3;
   border: #f1faf3 solid;
-  height: 300px;
 }
 
 
