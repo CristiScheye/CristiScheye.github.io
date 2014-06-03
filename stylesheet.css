@@ -6,11 +6,19 @@ body, html {
   color: #555;
 }
 
-a {
-  text-decoration: none;
-  color: #555;
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
 }
 
+ul {
+  width: 70%;
+  margin: 0 auto;
+}
+
+a {
+  color: #555;
+}
 
 #content {
   position: absolute;
@@ -21,6 +29,12 @@ a {
   height: 100%;
   width: 175px;
   position: absolute;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.12em;
 }
 
 #sidebar-text {
@@ -44,8 +58,7 @@ a {
 
 #icons {
   margin: 0 auto;
-  width: 50%;
-  padding: 5%;
+  text-align: center;
 }
 
 .section {
@@ -55,26 +68,23 @@ a {
   position: relative;
 }
 
-#welcome {
+#about {
   background-color: #f1faf3;
   border: #f1faf3 solid;
 }
 
 
-#about {
+#projects {
   background-color: #a9e2e2;
   border: #a9e2e2 solid;
-  height: 300px;
-}
-
-#projects {
-  background-color: #9cded0;
-  border: #9cded0 solid;
-  height: 300px;
 }
 
 #resume {
+  background-color: #9cded0;
+  border: #9cded0 solid;
+}
+
+#contact {
   background-color: #9bcede;
   border: #9bcede solid;
-  height: 300px;
 }
