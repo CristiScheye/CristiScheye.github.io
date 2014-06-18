@@ -25,7 +25,9 @@ h5 {
 ul {
   width: 70%;
   margin: 0 auto;
+  text-align: left;
 }
+
 
 a {
   color: #444;
@@ -36,6 +38,7 @@ a {
   margin: 0;
   width: 100%
 }
+
 #sidebar {
   height: 100%;
   width: 175px;
@@ -60,11 +63,16 @@ a {
 }
 
 #profile-img {
-  display: inline;
   float: right;
   height: 200px;
   width: 200px;
   border-radius: 100px;
+  margin: 20px 50px;
+}
+
+.text-block {
+  width: 70%;
+  margin: 0 auto;
 }
 
 #icons {
