@@ -80,6 +80,11 @@ a {
   text-align: center;
 }
 
+#icons a {
+  text-decoration: none;
+}
+
+
 .section {
   margin: 5%;
   margin-left: 200px;
