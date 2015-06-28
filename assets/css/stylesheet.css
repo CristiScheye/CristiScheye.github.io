@@ -36,6 +36,24 @@ section {
   padding: 1em;
 }
 
+.section-toggle {
+  padding: 1em;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.section-toggle + div {
+  display: none;
+  visibility: hidden;
+}
+
+.section-toggle.active + div {
+  display: initial;
+  visibility: initial;
+}
+
 
 /* sidebar */
 .sidebar-container {
@@ -70,23 +88,42 @@ section {
 
 /* other sections */
 #about {
-  background-color: #f1faf3;
-  border: #f1faf3 solid;
+  background-color: #BBFCFF;
+  border: #BBFCFF solid;
 }
 
 #projects {
-  background-color: #a9e2e2;
-  border: #a9e2e2 solid;
+  background-color: #FFBBD4;
+  border: #FFBBD4 solid;
 }
 
 #resume {
-  background-color: #9cded0;
-  border: #9cded0 solid;
+  background-color: #DEFFBB;
+  border: #DEFFBB solid;
 }
 
 #contact {
-  background-color: #9bcede;
-  border: #9bcede solid;
+  background-color: #FFDABB;
+  border: #FFDABB solid;
+}
+
+.divider {
+  height: 0.5em;
+}
+
+#about-projects {
+  background-color: #BBFCFF;
+  background-image: linear-gradient(#BBFCFF, #FFBBD4)
+}
+
+#projects-resume {
+  background-color: #FFBBD4;
+  background-image: linear-gradient(#FFBBD4, #DEFFBB)
+}
+
+#resume-contact {
+  background-color: #DEFFBB;
+  background-image: linear-gradient(#DEFFBB, #FFDABB)
 }
 
 @media(min-width: 650px) {
@@ -95,8 +132,8 @@ section {
   }
   /* sidebar */
   .sidebar-container {
-    display: block;
-    visibility: visible;
+    display: initial;
+    visibility: initial;
 
     position: absolute;
     margin: 0;
