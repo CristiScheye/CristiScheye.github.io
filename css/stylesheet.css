@@ -9,7 +9,7 @@ body, html {
 
 h1, h2, h3, h4, h5 {
   text-align: center;
-  font-family: "Unica One";
+  font-family: "Unica One", sans-serif;
 }
 
 h1 {font-size: 55pt;}
