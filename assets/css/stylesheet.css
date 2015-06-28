@@ -12,18 +12,17 @@ h1, h2, h3, h4, h5 {
   font-family: "Unica One", sans-serif;
 }
 
-h1 {font-size: 55pt;}
-h2 {font-size: 40pt;}
-h3 {font-size: 30pt;}
-h4 {font-size: 20pt;}
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2.25em;}
+h4 {font-size: 1.75em;}
 h5 {
-  font-size: 12pt;
+  font-size: 1.25em;
   font-family: inherit;
   font-weight: normal;
 }
 
 ul {
-  width: 70%;
   margin: 0 auto;
   text-align: left;
 }
@@ -33,70 +32,47 @@ a {
   color: #444;
 }
 
-#content {
-  position: absolute;
-  margin: 0;
-  width: 100%
+section {
+  padding: 1em;
 }
 
-#sidebar {
-  height: 100%;
-  width: 175px;
-  position: absolute;
+
+/* sidebar */
+.sidebar-container {
+  display: none;
+  visibility: hidden;
 }
 
-#sidebar a {
-  text-decoration: none;
-  color: #444;
-  font-size: 1.12em;
-}
-
-#sidebar-text {
-  text-align: right;
-  position: fixed;
-  left: 50px;
-  top: 50px;
-}
-
-#sidebar-text ul {
-  list-style-type: none;
-}
-
-#profile-img {
+/* title/intro section */
+.profile-img {
   float: right;
   height: 200px;
   width: 200px;
-  border-radius: 100px;
   margin: 20px 50px;
+  border-radius: 100px;
 }
 
-.text-block {
-  width: 70%;
+.intro-text {
   margin: 0 auto;
 }
 
-#icons {
+
+/* footer section */
+
+.icons {
   margin: 0 auto;
   text-align: center;
 }
 
-#icons a {
+.icons > a {
   text-decoration: none;
 }
 
-
-.section {
-  margin: 5%;
-  margin-left: 200px;
-  display: block;
-  position: relative;
-}
-
+/* other sections */
 #about {
   background-color: #f1faf3;
   border: #f1faf3 solid;
 }
-
 
 #projects {
   background-color: #a9e2e2;
@@ -111,4 +87,47 @@ a {
 #contact {
   background-color: #9bcede;
   border: #9bcede solid;
+}
+
+@media(min-width: 650px) {
+  ul {
+    width: 70%;
+  }
+  /* sidebar */
+  .sidebar-container {
+    display: block;
+    visibility: visible;
+
+    position: absolute;
+    margin: 0;
+    width: 100%
+  }
+
+  .sidebar {
+    position: absolute;
+    height: 100%;
+    width: 175px;
+  }
+
+  .sidebar-link {
+    text-decoration: none;
+    color: #444;
+    font-size: 1.12em;
+  }
+
+  .sidebar-text {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    text-align: right;
+  }
+
+  .sidebar-text > ul {
+    list-style-type: none;
+  }
+
+  /* other sections */
+  section {
+    padding-left: 200px;
+  }
 }
