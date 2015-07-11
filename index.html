@@ -2,6 +2,7 @@
   <head>
     <title>Cristi Scheye</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css" charset="utf-8">
+    <link rel="stylesheet" href="./assets/css/colors.css" charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -9,52 +10,44 @@
   </head>
   <body>
     <div class="sidebar-container">
-      <div class="sidebar">
-        <div class="sidebar-text">
-          <ul>
-            <li><a class="sidebar-link" href="#about">About Me</a></li>
-            <li><a class="sidebar-link" href="#projects">Projects</a></li>
-            <li><a class="sidebar-link" href="#resume">Resume</a></li>
-            <li><a class="sidebar-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+      <ul class="sidebar-text">
+        <li><a class="sidebar-link" href="#about">About Me</a></li>
+        <li><a class="sidebar-link" href="#projects">Projects</a></li>
+        <li><a class="sidebar-link" href="#resume">Resume</a></li>
+        <li><a class="sidebar-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
 
     <div class="main">
 
-      <section id="about">
+      <section id="about" class="clearfix">
         <h1>Cristi Scheye</h1>
-        <h2>Web Developer, San Francisco</h2>
+        <h2>Software Engineer, San Francisco</h2>
 
         <div class="intro-text">
           <img class="profile-img" src="./assets/images/profile_cropped.jpg" alt="Cristi Scheye">
-          <p>Hi there! My name is Cristi and I'm a web developer in San Francisco.</p>
+          <p>Hi there! My name is Cristi and I'm a software engineer in San Francisco.</p>
 
-          <p>
-            I currently work as a software engineer at <a href="http://getable.com/" target="_blank">Getable</a>. We're creating a platform for construction industry professionals to manage and procure equipment rentals. Our tech stack is Node, Backbone, and CouchDB.
-          </p>
+          <p>I currently work as a full stack developer at <a href="http://getable.com/" target="_blank">Getable</a>, a start-up making an online platform for construction equipment rentals.</p>
 
-          <p>Before I got into programming, I studied biology and math, and then got a job in market research. In my previous position as a market research analyst I got my hands dirty writing SQL and a few scripts to help automate tasks.</p>
-
-          <p>One of my favorite things about the job was the opportunity to learn new things and solve interesting problems daily. I decided to pursue web development because I like to build projects with a combination of creativity and analytical problem solving.</p>
+          <p>Before I got into programming, I studied biology and math, and then worked for a couple of years in market research. In my previous position as a market research analyst I got my hands dirty writing SQL and a few scripts to help automate tasks.</p>
         </div>
       </section>
 
       <div id="about-projects" class="divider"></div>
 
-      <section id="projects">
+      <section id="projects" class="clearfix">
         <h3>Recent Projects</h3>
 
         <h4>Text Shadow Playground</h4>
         <ul>
-          <li>An interactive page for playing around with the "text-shadow" css properties.</li>
+          <li>An interactive tool for playing around with the "text-shadow" css properties.</li>
           <li>Utilizes React's inline styling to apply the user's styles to the sample text.</li>
           <li>React.js</li>
           <li><a href="https://cristischeye.github.io/text-shadow-playground">Check it Out</a>, <a href="https://github.com/cristischeye/text-shadow-playground">View Code</a></li>
         </ul>
 
-        <p class="section-toggle">See More</p>
+        <p class="section-toggle">See Past Projects</p>
         <div>
           <h4>BillSplitr</h4>
           <ul>

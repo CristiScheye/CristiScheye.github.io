@@ -1,9 +1,8 @@
 body, html {
   margin: 0;
-  height: 100%;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  color: #444;
+  color: #050819;
 }
 
 
@@ -34,6 +33,19 @@ a {
 
 section {
   padding: 1em;
+  padding-bottom: 2em;
+  margin: 3em;
+  background-color: white;
+}
+
+section:not(:last-child) {
+  border-bottom: 2px solid #B3D9D8;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .section-toggle {
@@ -54,6 +66,10 @@ section {
   visibility: initial;
 }
 
+.main {
+  /*background-color: #FFF3EA;*/
+}
+
 
 /* sidebar */
 .sidebar-container {
@@ -66,7 +82,7 @@ section {
   float: right;
   height: 200px;
   width: 200px;
-  margin: 20px 50px;
+  margin: 2em 0;
   border-radius: 100px;
 }
 
@@ -87,63 +103,34 @@ section {
 }
 
 /* other sections */
-#about {
-  background-color: #BBFCFF;
-  border: #BBFCFF solid;
-}
-
-#projects {
-  background-color: #FFBBD4;
-  border: #FFBBD4 solid;
-}
-
-#resume {
-  background-color: #DEFFBB;
-  border: #DEFFBB solid;
-}
-
-#contact {
-  background-color: #FFDABB;
-  border: #FFDABB solid;
-}
 
 .divider {
   height: 0.5em;
-}
-
-#about-projects {
-  background-color: #BBFCFF;
-  background-image: linear-gradient(#BBFCFF, #FFBBD4)
-}
-
-#projects-resume {
-  background-color: #FFBBD4;
-  background-image: linear-gradient(#FFBBD4, #DEFFBB)
-}
-
-#resume-contact {
-  background-color: #DEFFBB;
-  background-image: linear-gradient(#DEFFBB, #FFDABB)
 }
 
 @media(min-width: 650px) {
   ul {
     width: 70%;
   }
+
+  .main {
+    position: absolute;
+    top: 0;
+    left: 180px;
+  }
   /* sidebar */
   .sidebar-container {
     display: initial;
     visibility: initial;
 
-    position: absolute;
-    margin: 0;
-    width: 100%
-  }
-
-  .sidebar {
-    position: absolute;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     width: 175px;
+    padding: 5px;
+
+    background-color: #7CD6D2;
+    background-image: linear-gradient(to right, #7CD6D2, #B3D9D8);
   }
 
   .sidebar-link {
@@ -153,18 +140,15 @@ section {
   }
 
   .sidebar-text {
-    position: fixed;
-    left: 50px;
-    top: 50px;
-    text-align: right;
-  }
+    position: relative;
+    top: 5em;
 
-  .sidebar-text > ul {
+    text-align: right;
     list-style-type: none;
   }
 
-  /* other sections */
-  section {
-    padding-left: 200px;
+  .profile-image {
+    margin: 2em;
   }
+
 }

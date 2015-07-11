@@ -1,63 +1,63 @@
 /* CSS - Cascading Style Sheet */
 /* Palette color codes */
-/* Palette URL: http://paletton.com/#uid=73j230kf4++00++8A++kC+YqcZY */
+/* Palette URL: http://paletton.com/#uid=73h0u0k5DOSdoNK9PNJ3qJU2EDp */
 
 /* Feel free to copy&paste color codes to your application */
 
 
 /* As hex codes */
 
-.color-primary-0 { color: #88FAFF } /* Main Primary color */
-.color-primary-1 { color: #FFFFFF }
-.color-primary-2 { color: #BBFCFF }
-.color-primary-3 { color: #5CF8FF }
-.color-primary-4 { color: #2FF3FC }
+.color-primary-0 { color: #B3D9D8 } /* Main Primary color */
+.color-primary-1 { color: #7CD6D2 }
+.color-primary-2 { color: #94D6D3 }
+.color-primary-3 { color: #B4CAC9 }
+.color-primary-4 { color: #A6B5B5 }
 
-.color-secondary-1-0 { color: #FF87B3 } /* Main Secondary color (1) */
-.color-secondary-1-1 { color: #FFFFFF }
-.color-secondary-1-2 { color: #FFBBD4 }
-.color-secondary-1-3 { color: #FF5B98 }
-.color-secondary-1-4 { color: #FE2E7B }
+.color-secondary-1-0 { color: #BCC7DF } /* Main Secondary color (1) */
+.color-secondary-1-1 { color: #89A4DC }
+.color-secondary-1-2 { color: #9FB3DC }
+.color-secondary-1-3 { color: #BEC4D2 }
+.color-secondary-1-4 { color: #B2B7C1 }
 
-.color-secondary-2-0 { color: #C5FF87 } /* Main Secondary color (2) */
-.color-secondary-2-1 { color: #FFFFFF }
-.color-secondary-2-2 { color: #DEFFBB }
-.color-secondary-2-3 { color: #B0FF5B }
-.color-secondary-2-4 { color: #9AFE2E }
+.color-secondary-2-0 { color: #FFF0D2 } /* Main Secondary color (2) */
+.color-secondary-2-1 { color: #FFDB94 }
+.color-secondary-2-2 { color: #FFE4B1 }
+.color-secondary-2-3 { color: #FFF6E4 }
+.color-secondary-2-4 { color: #FFF8EA }
 
-.color-complement-0 { color: #FFBE87 }  /* Main Complement color */
-.color-complement-1 { color: #FFFFFF }
-.color-complement-2 { color: #FFDABB }
-.color-complement-3 { color: #FFA75B }
-.color-complement-4 { color: #FF8F2E }
+.color-complement-0 { color: #FFE6D2 }  /* Main Complement color */
+.color-complement-1 { color: #FFC494 }
+.color-complement-2 { color: #FFD4B1 }
+.color-complement-3 { color: #FFF0E4 }
+.color-complement-4 { color: #FFF3EA }
 
 
 
 /* As RGBa codes */
 
-.rgba-primary-0 { color: rgba(136,250,255,1) }  /* Main Primary color */
-.rgba-primary-1 { color: rgba(255,255,255,1) }
-.rgba-primary-2 { color: rgba(187,252,255,1) }
-.rgba-primary-3 { color: rgba( 92,248,255,1) }
-.rgba-primary-4 { color: rgba( 47,243,252,1) }
+.rgba-primary-0 { color: rgba(179,217,216,1) }  /* Main Primary color */
+.rgba-primary-1 { color: rgba(124,214,210,1) }
+.rgba-primary-2 { color: rgba(148,214,211,1) }
+.rgba-primary-3 { color: rgba(180,202,201,1) }
+.rgba-primary-4 { color: rgba(166,181,181,1) }
 
-.rgba-secondary-1-0 { color: rgba(255,135,179,1) }  /* Main Secondary color (1) */
-.rgba-secondary-1-1 { color: rgba(255,255,255,1) }
-.rgba-secondary-1-2 { color: rgba(255,187,212,1) }
-.rgba-secondary-1-3 { color: rgba(255, 91,152,1) }
-.rgba-secondary-1-4 { color: rgba(254, 46,123,1) }
+.rgba-secondary-1-0 { color: rgba(188,199,223,1) }  /* Main Secondary color (1) */
+.rgba-secondary-1-1 { color: rgba(137,164,220,1) }
+.rgba-secondary-1-2 { color: rgba(159,179,220,1) }
+.rgba-secondary-1-3 { color: rgba(190,196,210,1) }
+.rgba-secondary-1-4 { color: rgba(178,183,193,1) }
 
-.rgba-secondary-2-0 { color: rgba(197,255,135,1) }  /* Main Secondary color (2) */
-.rgba-secondary-2-1 { color: rgba(255,255,255,1) }
-.rgba-secondary-2-2 { color: rgba(222,255,187,1) }
-.rgba-secondary-2-3 { color: rgba(176,255, 91,1) }
-.rgba-secondary-2-4 { color: rgba(154,254, 46,1) }
+.rgba-secondary-2-0 { color: rgba(255,240,210,1) }  /* Main Secondary color (2) */
+.rgba-secondary-2-1 { color: rgba(255,219,148,1) }
+.rgba-secondary-2-2 { color: rgba(255,228,177,1) }
+.rgba-secondary-2-3 { color: rgba(255,246,228,1) }
+.rgba-secondary-2-4 { color: rgba(255,248,234,1) }
 
-.rgba-complement-0 { color: rgba(255,190,135,1) } /* Main Complement color */
-.rgba-complement-1 { color: rgba(255,255,255,1) }
-.rgba-complement-2 { color: rgba(255,218,187,1) }
-.rgba-complement-3 { color: rgba(255,167, 91,1) }
-.rgba-complement-4 { color: rgba(255,143, 46,1) }
+.rgba-complement-0 { color: rgba(255,230,210,1) } /* Main Complement color */
+.rgba-complement-1 { color: rgba(255,196,148,1) }
+.rgba-complement-2 { color: rgba(255,212,177,1) }
+.rgba-complement-3 { color: rgba(255,240,228,1) }
+.rgba-complement-4 { color: rgba(255,243,234,1) }
 
 
 
