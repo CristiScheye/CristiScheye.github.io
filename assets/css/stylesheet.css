@@ -39,7 +39,7 @@ section {
 }
 
 section:not(:last-child) {
-  border-bottom: 2px solid #B3D9D8;
+  border-bottom: 2px solid #89A4DC;
 }
 
 .clearfix:after {
