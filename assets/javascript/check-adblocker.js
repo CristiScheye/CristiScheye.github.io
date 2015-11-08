@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     , twitterIcon = twitterLink.children[0]
     , linkedInIcon = linkedInLink.children[0]
 
-
+console.log('style', twitterIcon.style.getPropertyValue('display'))
   if (twitterIcon.style.getPropertyValue('display') == 'none') {
     // twitterIcon.style.setPropertyValue('display', 'inline-block')
     twitterLink.innerHTML = 'Twitter'
