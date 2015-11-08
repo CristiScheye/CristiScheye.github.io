@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   if (twitterIcon.style.getPropertyValue('display') == 'none') {
-    twitterIcon.style.setPropertyValue('display', 'inline-block')
+    // twitterIcon.style.setPropertyValue('display', 'inline-block')
+    twitterLink.innerHTML = 'Twitter'
   }
 
   if (linkedInIcon.style.getPropertyValue('display') == 'none') {
-    linkedInIcon.style.setPropertyValue('display', 'inline-block')
+    // linkedInIcon.style.setPropertyValue('display', 'inline-block')
+    linkedInLink.innerHTML = 'LinkedIn'
   }
 
 })
