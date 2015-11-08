@@ -2,19 +2,33 @@
   <head>
     <title>Cristi Scheye</title>
     <link rel="stylesheet" href="./assets/css/stylesheet.css" charset="utf-8">
-    <link rel="stylesheet" href="./assets/css/colors.css" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/png" href="./assets/images/favicon.ico">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/toggle-section.js"></script>
   </head>
-  <body>
-    <div class="sidebar-container">
-      <ul class="sidebar-text">
-        <li><a class="sidebar-link" href="#about">About Me</a></li>
-        <li><a class="sidebar-link" href="#projects">Projects</a></li>
-        <li><a class="sidebar-link" href="#resume">Resume</a></li>
-        <li><a class="sidebar-link" href="#contact">Contact</a></li>
+  <body id="top">
+    <div class="navbar-container">
+      <ul class="navbar-list">
+        <li class="navbar-item navbar-logo"><a href="./index.html">CS</a></li>
+
+        <li class="navbar-item navbar-item-right">
+          <a class="navbar-icon" href="https://twitter.com/cscheye" target="_blank">
+          <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+
+        <li class="navbar-item navbar-item-right">
+          <a class="navbar-icon" href="https://www.linkedin.com/in/cristischeye" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+
+        <li class="navbar-item navbar-item-right">
+          <a class="navbar-icon" href="http://github.com/cristischeye" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -34,61 +48,6 @@
         </div>
       </section>
 
-      <div id="about-projects" class="divider"></div>
-
-      <section id="projects" class="clearfix">
-        <h3>Recent Projects</h3>
-
-        <h4>Text Shadow Playground</h4>
-        <ul>
-          <li>An interactive tool for playing around with the "text-shadow" css properties.</li>
-          <li>Utilizes React's inline styling to apply the user's styles to the sample text.</li>
-          <li>React.js</li>
-          <li><a href="https://cristischeye.github.io/text-shadow-playground">Check it Out</a>, <a href="https://github.com/cristischeye/text-shadow-playground">View Code</a></li>
-        </ul>
-
-        <p class="section-toggle">See Past Projects</p>
-        <div>
-          <h4>BillSplitr</h4>
-          <ul>
-            <li>Bill splitting app modeled after BillPin.</li>
-            <li>Custom model logic calculates subtotals owed between users.</li>
-            <li>Nested form allows users to post bill and share in one step.</li>
-            <li>Ruby on Rails, Backbone.js</li>
-            <li><a href="http://peaceful-shelf-8333.herokuapp.com/">Check it Out</a>, <a href="https://github.com/CristiScheye/BillSplitr">View Code</a></li>
-          </ul>
-
-          <h4>CityVoice</h4>
-          <ul>
-            <li>An open-source project by Code For America.</li>
-            <li>Increased test coverage in RSpec and refactored back-end layers code.</li>
-            <li>Extracted TwiML generation from controller to xml views.</li>
-            <li><a href="https://github.com/codeforamerica/cityvoice/pull/154">Pull requests</a> merged to master branch.</li>
-            <li>Ruby on Rails, Twilio, RSpec</li>
-            <li><a href="http://cityvoiceapp.com/">Check it Out</a>, <a href="https://github.com/codeforamerica/cityvoice">View Code</a></li>
-          </ul>
-
-          <h4>Storylines</h4>
-          <ul>
-            <li>A collaborative story-telling app where users write stories together, one line at a time.</li>
-            <li>Uses <a href="https://github.com/CristiScheye/storylines/blob/master/app/controllers/unfinished_stories_controller.rb">custom controller and business logic</a> to direct user to the next unfinished story for them to continue.</li>
-            <li>Ruby on Rails</li>
-            <li><a href="http://storylines-app.herokuapp.com">Check it Out</a>, <a href="https://github.com/cristischeye/storylines">View Code</a></li>
-          </ul>
-
-          <h4>Cats in Space</h4>
-          <ul>
-            <li>A feline spin on the classic asteroids game.</li>
-            <li>Uses prototypal inheritance to describe different moving objects and keep code DRY.</li>
-            <li>Custom-built trigonometric functions to calculate object velocities.</li>
-            <li>JavaScript, HTML5, CSS3</li>
-            <li><a href="http://cristischeye.github.io/cats-in-space">Check it Out</a>, <a href="https://github.com/CristiScheye/asteroids">View Code</a></li>
-          </ul>
-        </div>
-      </section>
-
-
-      <div id="projects-resume" class="divider"></div>
 
       <section id="resume">
         <h3>Resume</h3>
@@ -133,20 +92,54 @@
         </ul>
       </section>
 
-      <div id="resume-contact" class="divider"></div>
+      <section id="projects" class="clearfix">
+        <h3>Recent Projects</h3>
 
-      <section id="contact">
-        <h3>Contact</h3>
-        <div class="icons">
-          <a href="mailto:cristi.scheye@gmail.com">
-            <img src="./assets/images/email.png">
-          </a>
-          <a href="http://github.com/cristischeye">
-            <img src="./assets/images/GitHub-Mark-64px.png">
-          </a>
-          <a href="https://www.linkedin.com/in/cristischeye">
-            <img src="./assets/images/li-img-64.png">
-          </a>
+        <h4>Text Shadow Playground</h4>
+        <ul>
+          <li>An interactive tool for playing around with the "text-shadow" css properties.</li>
+          <li>Utilizes React's inline styling to apply the user's styles to the sample text.</li>
+          <li>React.js</li>
+          <li><a href="https://cristischeye.github.io/text-shadow-playground">Check it Out</a>, <a href="https://github.com/cristischeye/text-shadow-playground">View Code</a></li>
+        </ul>
+
+        <p class="section-toggle">See More</p>
+        <div>
+          <h4>BillSplitr</h4>
+          <ul>
+            <li>Bill splitting app modeled after BillPin.</li>
+            <li>Custom model logic calculates subtotals owed between users.</li>
+            <li>Nested form allows users to post bill and share in one step.</li>
+            <li>Ruby on Rails, Backbone.js</li>
+            <li><a href="http://peaceful-shelf-8333.herokuapp.com/">Check it Out</a>, <a href="https://github.com/CristiScheye/BillSplitr">View Code</a></li>
+          </ul>
+
+          <h4>CityVoice</h4>
+          <ul>
+            <li>An open-source project by Code For America.</li>
+            <li>Increased test coverage in RSpec and refactored back-end layers code.</li>
+            <li>Extracted TwiML generation from controller to xml views.</li>
+            <li><a href="https://github.com/codeforamerica/cityvoice/pull/154">Pull requests</a> merged to master branch.</li>
+            <li>Ruby on Rails, Twilio, RSpec</li>
+            <li><a href="http://cityvoiceapp.com/">Check it Out</a>, <a href="https://github.com/codeforamerica/cityvoice">View Code</a></li>
+          </ul>
+
+          <h4>Storylines</h4>
+          <ul>
+            <li>A collaborative story-telling app where users write stories together, one line at a time.</li>
+            <li>Uses <a href="https://github.com/CristiScheye/storylines/blob/master/app/controllers/unfinished_stories_controller.rb">custom controller and business logic</a> to direct user to the next unfinished story for them to continue.</li>
+            <li>Ruby on Rails</li>
+            <li><a href="http://storylines-app.herokuapp.com">Check it Out</a>, <a href="https://github.com/cristischeye/storylines">View Code</a></li>
+          </ul>
+
+          <h4>Cats in Space</h4>
+          <ul>
+            <li>A feline spin on the classic asteroids game.</li>
+            <li>Uses prototypal inheritance to describe different moving objects and keep code DRY.</li>
+            <li>Custom-built trigonometric functions to calculate object velocities.</li>
+            <li>JavaScript, HTML5, CSS3</li>
+            <li><a href="http://cristischeye.github.io/cats-in-space">Check it Out</a>, <a href="https://github.com/CristiScheye/asteroids">View Code</a></li>
+          </ul>
         </div>
       </section>
 

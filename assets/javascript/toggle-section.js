@@ -1,16 +1,21 @@
-(function($) {
-  $(document).ready(function(){
-    $('.section-toggle').click(function(e) {
-      var $el = $(e.target)
+document.addEventListener('DOMContentLoaded', function () {
+  var toggles = document.getElementsByClassName('section-toggle')
 
-      $el.toggleClass('active')
+  Array.prototype.forEach.call(toggles, function (toggle) {
 
-      if ($el.hasClass('active')) {
-        $el.html('Hide Past Projects')
+    toggle.onclick = function (e) {
+      var t = e.target
+
+      if (t.classList.contains('active')) {
+        t.classList.remove('active')
+        t.innerHTML = 'See More'
       }
       else {
-        $el.html('See Past Projects')
+        t.classList.add('active')
+        t.innerHTML = 'See Less'
       }
-    })
+
+    }
   })
-})(jQuery)
+})
+

@@ -1,3 +1,13 @@
+/*
+
+ blue: ##81d8d0
+ yellow: #FFDB98
+ light orange: #FFF7E8;
+ pink: #FC979E
+
+*/
+
+
 body, html {
   margin: 0;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -31,21 +41,67 @@ a {
   color: #444;
 }
 
-section {
-  padding: 1em;
-  padding-bottom: 2em;
-  margin: 3em;
-  background-color: white;
-}
-
-section:not(:last-child) {
-  border-bottom: 2px solid #89A4DC;
-}
-
+/* always allow for right-floating items in navbar */
+.navbar-list:after,
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+
+/* navbar */
+.navbar-container {
+  width: 100%;
+  padding: 0;
+  background-color: #81d8d0;
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0.25em;
+  font-size: 3em;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-item-right {
+  float: right;
+}
+
+.navbar-item > a {
+  /* use inline-block display + padding for bigger click target */
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-logo {
+  border: 2px solid white;
+  border-radius: 3em;
+  font-family: "Unica One", sans-serif;
+  /* smaller line ht for round logo */
+  line-height: 1;
+}
+
+/* title/intro section */
+.profile-img {
+  float: right;
+  height: 200px;
+  width: 200px;
+  margin: 2em 0;
+  border-radius: 100px;
+}
+
+.intro-text {
+  margin: 0 auto;
+}
+
+section {
+  padding: 2em;
+  border: 3em solid #FFF7E8;
 }
 
 .section-toggle {
@@ -66,89 +122,3 @@ section:not(:last-child) {
   visibility: initial;
 }
 
-.main {
-  /*background-color: #FFF3EA;*/
-}
-
-
-/* sidebar */
-.sidebar-container {
-  display: none;
-  visibility: hidden;
-}
-
-/* title/intro section */
-.profile-img {
-  float: right;
-  height: 200px;
-  width: 200px;
-  margin: 2em 0;
-  border-radius: 100px;
-}
-
-.intro-text {
-  margin: 0 auto;
-}
-
-
-/* footer section */
-
-.icons {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.icons > a {
-  text-decoration: none;
-}
-
-/* other sections */
-
-.divider {
-  height: 0.5em;
-}
-
-@media(min-width: 650px) {
-  ul {
-    width: 70%;
-  }
-
-  .main {
-    position: absolute;
-    top: 0;
-    left: 180px;
-  }
-  /* sidebar */
-  .sidebar-container {
-    display: initial;
-    visibility: initial;
-
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 175px;
-    padding: 5px;
-
-    background-color: #7CD6D2;
-    background-image: linear-gradient(to right, #7CD6D2, #B3D9D8);
-  }
-
-  .sidebar-link {
-    text-decoration: none;
-    color: #444;
-    font-size: 1.12em;
-  }
-
-  .sidebar-text {
-    position: relative;
-    top: 5em;
-
-    text-align: right;
-    list-style-type: none;
-  }
-
-  .profile-image {
-    margin: 2em;
-  }
-
-}
