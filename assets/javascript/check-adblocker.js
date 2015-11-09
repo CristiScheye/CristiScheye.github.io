@@ -1,5 +1,5 @@
-// Ad blocker is keepig the logo icons from showing...
-// use text instead
+// Ad blocker is keepig the linkedin and twitter icons from showing...
+// use image instead
 
 document.addEventListener('DOMContentLoaded', function () {
   var twitterLink = document.getElementById('link-twitter')
@@ -7,15 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
     , twitterIcon = twitterLink.children[0]
     , linkedInIcon = linkedInLink.children[0]
 
-console.log('style', twitterIcon.style.getPropertyValue('display'))
-  if (twitterIcon.style.getPropertyValue('display') == 'none') {
-    // twitterIcon.style.setPropertyValue('display', 'inline-block')
-    twitterLink.innerHTML = 'Twitter'
+
+  if (window.getComputedStyle(twitterIcon).getPropertyValue('display') == 'none') {
+    twitterLink.innerHTML = '<img src="./assets/images/TwitterLogo_white.png" style="height:1em;width:1em" >'
   }
 
-  if (linkedInIcon.style.getPropertyValue('display') == 'none') {
-    // linkedInIcon.style.setPropertyValue('display', 'inline-block')
-    linkedInLink.innerHTML = 'LinkedIn'
+  if (window.getComputedStyle(linkedInIcon).getPropertyValue('display') == 'none') {
+    linkedInLink.innerHTML = '<img src="./assets/images/In-White-34px-TM.png" style="height:0.75em;width:1em" >'
   }
 
 })
