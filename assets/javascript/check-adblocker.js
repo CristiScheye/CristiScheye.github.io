@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   if (window.getComputedStyle(twitterIcon).getPropertyValue('display') == 'none') {
-    twitterLink.innerHTML = '<img src="./assets/images/TwitterLogo_white.png" style="height:1em;width:1em" >'
+    twitterLink.innerHTML = '<img src="./assets/images/special_white_bird.png" style="height:1em;width:1em" >'
   }
 
   if (window.getComputedStyle(linkedInIcon).getPropertyValue('display') == 'none') {
