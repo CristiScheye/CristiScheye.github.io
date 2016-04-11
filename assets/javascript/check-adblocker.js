@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   if (window.getComputedStyle(twitterIcon).getPropertyValue('display') == 'none') {
-    twitterLink.innerHTML = '<img src="./assets/images/special_white_bird.png" style="height:1em;width:1em" >'
+    twitterLink.innerHTML = '<img src="./assets/images/twitter-64.png" style="height:1em;width:1em" >'
   }
 
   if (window.getComputedStyle(linkedInIcon).getPropertyValue('display') == 'none') {
-    linkedInLink.innerHTML = '<img src="./assets/images/In-White-34px-TM.png" style="height:0.75em;width:1em" >'
+    linkedInLink.innerHTML = '<img src="./assets/images/li-img-64.png" style="height:1em;width:1em" >'
   }
 
 })
