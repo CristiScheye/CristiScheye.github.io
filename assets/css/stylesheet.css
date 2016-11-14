@@ -54,16 +54,16 @@ a {
 }
 
 .profile-img {
-  float: left;
+  float: right;
   height: 200px;
   width: 160px;
   margin: 0 1em;
-  border-radius: 4px;
+  border-radius: 50%;
 }
 
 .intro-text {
   margin: 0 auto;
-  max-width: 30em;
+  max-width: 40em;
 }
 
 /* always allow for right-floating items in navbar */
